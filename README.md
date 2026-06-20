@@ -1,163 +1,119 @@
 <p align="center">
-  <img src="assets/profile-banner.svg" alt="Cemil Eray Halici profile banner" width="100%" />
+  <img src="assets/od-console.svg" alt="Orbit determination console banner" width="100%" />
+</p>
+
+<h1 align="center">Cemil Eray Halici</h1>
+
+<p align="center">
+  <strong>Orbit determination, estimation algorithms, and research-grade scientific Python.</strong>
 </p>
 
 <p align="center">
   <a href="https://github.com/halici21/lunar-orbit-determination">
-    <img src="https://img.shields.io/badge/Featured-Lunar%20Orbit%20Determination-1f6feb?style=for-the-badge" alt="Featured project" />
+    <img src="https://img.shields.io/badge/main%20project-lunar%20orbit%20determination-2563eb?style=flat-square" />
   </a>
-  <img src="https://img.shields.io/badge/Focus-Estimation%20Algorithms-14b8a6?style=for-the-badge" alt="Focus estimation algorithms" />
-  <img src="https://img.shields.io/badge/Stack-Scientific%20Python-f97316?style=for-the-badge" alt="Scientific Python" />
-</p>
-
-<p align="center">
-  <strong>Orbit Determination | Estimation Algorithms | Scientific Python | Mission-Analysis Tooling</strong>
+  <img src="https://img.shields.io/badge/domain-astrodynamics-0f766e?style=flat-square" />
+  <img src="https://img.shields.io/badge/methods-BLS--LM%20%7C%20SRIF%20%7C%20SR--UKF-7c3aed?style=flat-square" />
+  <img src="https://img.shields.io/badge/tools-Python%20%7C%20SPICE%20%7C%20PyQt5-f97316?style=flat-square" />
 </p>
 
 ---
 
-## Mission Brief
+## What I Work On
 
-I build research-oriented software for spacecraft orbit determination and
-mission-analysis workflows. My current work focuses on lunar orbit
-determination: propagating trajectories, modeling ground-station visibility,
-generating synthetic tracking measurements, and comparing batch and sequential
-estimators under sparse observation conditions.
+I develop computational tools for spacecraft navigation research. My current
+work is centered on **lunar orbit determination**: trajectory propagation,
+ground-station visibility, synthetic tracking measurements, estimator
+diagnostics, and reproducible comparison campaigns.
 
-The core idea behind my work is straightforward: start from a physically
-meaningful model, make it computationally testable, and turn estimation results
-into readable engineering insight.
+The technical emphasis is not only on getting an estimate, but on understanding
+**why** an estimator succeeds or fails under sparse geometry, interrupted
+tracking, nonlinear dynamics, and imperfect measurement information.
 
-<table>
-  <tr>
-    <td width="33%">
-      <h3>Orbit Determination</h3>
-      <p>Moon-centered propagation, tracking geometry, visibility arcs, and
-      estimator performance analysis.</p>
-    </td>
-    <td width="33%">
-      <h3>Estimation Methods</h3>
-      <p>Batch least squares, SRIF, square-root UKF, covariance consistency,
-      and Monte Carlo evaluation.</p>
-    </td>
-    <td width="33%">
-      <h3>Scientific Tooling</h3>
-      <p>Reproducible Python experiments, diagnostics, plotting, and PyQt5
-      desktop interfaces for local analysis.</p>
-    </td>
-  </tr>
-</table>
+## Active Repository
 
-## Research Flow
+### [lunar-orbit-determination](https://github.com/halici21/lunar-orbit-determination)
 
-<p align="center">
-  <img src="assets/research-flow.svg" alt="Research workflow" width="100%" />
-</p>
+A Python framework and native PyQt5 desktop application for lunar orbit
+determination experiments.
 
-## Featured Work
+| Layer | What it contains |
+| --- | --- |
+| Dynamics | Moon-centered propagation, third-body perturbations, STM integration |
+| Geometry | SPICE frames, Earth-fixed stations, elevation masks, lunar occultation |
+| Measurements | Range, azimuth, elevation, range-rate, simplified counted Doppler |
+| Estimation | BLS-LM, SRIF, SR-UKF, covariance and consistency diagnostics |
+| Experiments | Monte Carlo, long-duration arcs, fragmented visibility, Doppler cases |
+| Interface | Local PyQt5 app for scenario setup, run monitoring, plots, and comparison |
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3>
-        <a href="https://github.com/halici21/lunar-orbit-determination">
-          Lunar Orbit Determination Framework
-        </a>
-      </h3>
-      <p>
-        Python research framework and PyQt5 desktop application for comparing
-        BLS-LM, SRIF, and SR-UKF estimators in lunar tracking scenarios.
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Lunar%20OD-0f766e?style=flat-square" />
-        <img src="https://img.shields.io/badge/SPICE-0f172a?style=flat-square" />
-        <img src="https://img.shields.io/badge/SR--UKF-7c3aed?style=flat-square" />
-        <img src="https://img.shields.io/badge/PyQt5-16a34a?style=flat-square" />
-      </p>
-    </td>
-    <td width="50%">
-      <h3>Measurement and Visibility Studies</h3>
-      <p>
-        Synthetic range, angle, range-rate, and counted-Doppler experiments
-        with elevation masks, lunar occultation, fragmented arcs, and
-        estimator consistency diagnostics.
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Tracking%20Geometry-2563eb?style=flat-square" />
-        <img src="https://img.shields.io/badge/Monte%20Carlo-f97316?style=flat-square" />
-        <img src="https://img.shields.io/badge/NIS%2FNEES-0891b2?style=flat-square" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>Estimator Comparison Pipeline</h3>
-      <p>
-        Controlled comparison workflow for batch and sequential estimators using
-        shared truth trajectories, common measurements, identical noise
-        realizations, and reproducible scenario definitions.
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/BLS--LM-1d4ed8?style=flat-square" />
-        <img src="https://img.shields.io/badge/SRIF-4338ca?style=flat-square" />
-        <img src="https://img.shields.io/badge/Diagnostics-ca8a04?style=flat-square" />
-      </p>
-    </td>
-    <td width="50%">
-      <h3>Desktop Mission-Analysis Interface</h3>
-      <p>
-        Native PyQt5 application for scenario configuration, run monitoring,
-        result browsing, estimator comparison, station visibility, and
-        diagnostic visualization.
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Desktop%20App-334155?style=flat-square" />
-        <img src="https://img.shields.io/badge/Qt%20Designer-22c55e?style=flat-square" />
-        <img src="https://img.shields.io/badge/Plots-0284c7?style=flat-square" />
-      </p>
-    </td>
-  </tr>
-</table>
+## Technical Map
 
-## Engineering Stack
+```text
+truth trajectory
+      |
+      v
+visibility + occultation  ->  tracking arcs
+      |
+      v
+synthetic observables     ->  range / angles / range-rate / counted Doppler
+      |
+      v
+estimation pipeline       ->  BLS-LM / SRIF / SR-UKF
+      |
+      v
+diagnostics               ->  error, covariance, NIS, condition number, runtime
+```
+
+## Current Engineering Questions
+
+- How do batch and sequential estimators behave when lunar tracking is fragmented?
+- When does weak station geometry dominate estimator performance?
+- How should synthetic measurements be upgraded from instantaneous geometry to
+  light-time-aware observables?
+- Which diagnostics best explain estimator failure: residuals, covariance,
+  NIS, rank, condition number, or arc structure?
+- How can research scripts be packaged into a local tool that is useful for
+  scenario design and result inspection?
+
+## Working Stack
+
+| Area | Tools |
+| --- | --- |
+| Scientific Python | NumPy, SciPy, pandas, Matplotlib |
+| Astrodynamics | SPICE / spiceypy, reference frames, state propagation |
+| Estimation | least squares, square-root information filtering, unscented Kalman filtering |
+| Testing | pytest, seeded regression cases, finite-difference checks |
+| UI | PyQt5, Qt Designer, local desktop tooling |
+| Documentation | Markdown, LaTeX, reproducible experiment outputs |
+
+## Repository Signal
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,matlab,qt,git,github,vscode,linux,latex" alt="Engineering stack icons" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=halici21&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=halici21&layout=compact&theme=transparent&hide_border=true" alt="Top languages" />
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-  <img src="https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white" />
-  <img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/SPICE%20%2F%20spiceypy-0f172a?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/PyQt5-41CD52?style=for-the-badge&logo=qt&logoColor=white" />
-</p>
+## Direction
 
-## Public GitHub Snapshot
+My next improvements are focused on measurement realism and estimator
+defensibility:
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=halici21&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=halici21&layout=compact&theme=github_dark&hide_border=true" alt="Top languages" />
-</p>
-
-## Current Direction
-
-- Improve measurement realism beyond instantaneous synthetic geometry
-- Extend radiometric observable modeling and light-time handling
-- Strengthen estimator diagnostics under fragmented visibility
-- Keep the research code reproducible, tested, and readable
-- Build local tools that make complex orbit-determination results easier to inspect
+- one-way light-time corrected range / azimuth / elevation observables
+- clearer separation between geometric range-rate and counted Doppler
+- stronger residual/model consistency checks
+- better documentation of model limitations and assumptions
+- cleaner public-facing examples for reproducing comparison results
 
 ## Contact
 
 <p align="center">
   <a href="https://github.com/halici21">
-    <img src="https://img.shields.io/badge/GitHub-halici21-181717?style=for-the-badge&logo=github" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-halici21-181717?style=for-the-badge&logo=github" />
   </a>
 </p>
 
 ---
 
 <p align="center">
-  <sub>Research-oriented engineering around astrodynamics, estimation, and scientific software.</sub>
+  <sub>Research software for orbit determination, estimator comparison, and lunar tracking analysis.</sub>
 </p>

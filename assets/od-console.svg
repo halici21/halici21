@@ -1,0 +1,79 @@
+<svg width="1280" height="300" viewBox="0 0 1280 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#06111f"/>
+      <stop offset="0.52" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="line" x1="80" y1="230" x2="1220" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.55" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="300" rx="24" fill="url(#bg)"/>
+  <rect x="38" y="36" width="1204" height="228" rx="16" fill="#020617" opacity="0.52" stroke="#1e293b"/>
+
+  <g opacity="0.28" stroke="#334155" stroke-width="1">
+    <path d="M80 70 H1200"/>
+    <path d="M80 110 H1200"/>
+    <path d="M80 150 H1200"/>
+    <path d="M80 190 H1200"/>
+    <path d="M80 230 H1200"/>
+    <path d="M180 52 V248"/>
+    <path d="M360 52 V248"/>
+    <path d="M540 52 V248"/>
+    <path d="M720 52 V248"/>
+    <path d="M900 52 V248"/>
+    <path d="M1080 52 V248"/>
+  </g>
+
+  <path d="M88 222 C220 120 344 180 474 128 C642 62 778 108 916 142 C1042 173 1126 126 1200 78" stroke="url(#line)" stroke-width="3" fill="none" filter="url(#softGlow)"/>
+  <path d="M92 236 C232 172 358 210 510 174 C690 132 812 176 960 194 C1070 207 1137 181 1200 150" stroke="#64748b" stroke-width="1.5" fill="none" opacity="0.6"/>
+
+  <circle cx="474" cy="128" r="6" fill="#22d3ee" filter="url(#softGlow)"/>
+  <circle cx="916" cy="142" r="6" fill="#60a5fa" filter="url(#softGlow)"/>
+  <circle cx="1200" cy="78" r="6" fill="#f97316" filter="url(#softGlow)"/>
+
+  <g font-family="Consolas, 'Courier New', monospace">
+    <text x="74" y="78" font-size="13" fill="#64748b">MCI STATE</text>
+    <text x="74" y="99" font-size="13" fill="#e2e8f0">x = [r, v]</text>
+    <text x="74" y="121" font-size="13" fill="#94a3b8">STM propagated</text>
+
+    <text x="405" y="78" font-size="13" fill="#64748b">OBSERVATIONS</text>
+    <text x="405" y="99" font-size="13" fill="#e2e8f0">range | az | el</text>
+    <text x="405" y="121" font-size="13" fill="#94a3b8">visibility-gated</text>
+
+    <text x="735" y="78" font-size="13" fill="#64748b">ESTIMATORS</text>
+    <text x="735" y="99" font-size="13" fill="#e2e8f0">BLS-LM / SRIF</text>
+    <text x="735" y="121" font-size="13" fill="#94a3b8">SR-UKF sequential</text>
+
+    <text x="1010" y="78" font-size="13" fill="#64748b">DIAGNOSTICS</text>
+    <text x="1010" y="99" font-size="13" fill="#e2e8f0">NIS | condition</text>
+    <text x="1010" y="121" font-size="13" fill="#94a3b8">runtime | error</text>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="74" y="184" font-size="46" font-weight="800" fill="#f8fafc">Cemil Eray Halici</text>
+    <text x="76" y="220" font-size="21" font-weight="600" fill="#67e8f9">Lunar orbit determination and estimator analysis</text>
+  </g>
+
+  <g font-family="Consolas, 'Courier New', monospace" font-size="13" font-weight="700">
+    <rect x="76" y="238" width="112" height="28" rx="5" fill="#0f766e"/>
+    <text x="96" y="257" fill="#ffffff">LUNAR OD</text>
+    <rect x="198" y="238" width="104" height="28" rx="5" fill="#1d4ed8"/>
+    <text x="219" y="257" fill="#ffffff">SPICE</text>
+    <rect x="312" y="238" width="128" height="28" rx="5" fill="#7c3aed"/>
+    <text x="333" y="257" fill="#ffffff">SR-UKF</text>
+    <rect x="450" y="238" width="156" height="28" rx="5" fill="#f97316"/>
+    <text x="471" y="257" fill="#ffffff">PYTHON TOOLS</text>
+  </g>
+</svg>
