@@ -22,48 +22,49 @@
   <rect width="1280" height="300" rx="24" fill="url(#bg)"/>
   <rect x="38" y="36" width="1204" height="228" rx="16" fill="#020617" opacity="0.52" stroke="#1e293b"/>
 
-  <g opacity="0.28" stroke="#334155" stroke-width="1">
-    <path d="M80 70 H1200"/>
-    <path d="M80 110 H1200"/>
-    <path d="M80 150 H1200"/>
-    <path d="M80 190 H1200"/>
-    <path d="M80 230 H1200"/>
-    <path d="M180 52 V248"/>
-    <path d="M360 52 V248"/>
-    <path d="M540 52 V248"/>
-    <path d="M720 52 V248"/>
-    <path d="M900 52 V248"/>
-    <path d="M1080 52 V248"/>
+  <g opacity="0.25" stroke="#334155" stroke-width="1">
+    <path d="M80 78 H1200"/>
+    <path d="M80 122 H1200"/>
+    <path d="M80 166 H1200"/>
+    <path d="M80 210 H1200"/>
+    <path d="M80 242 H1200"/>
+    <path d="M198 52 V248"/>
+    <path d="M384 52 V248"/>
+    <path d="M570 52 V248"/>
+    <path d="M756 52 V248"/>
+    <path d="M942 52 V248"/>
+    <path d="M1128 52 V248"/>
   </g>
 
-  <path d="M88 222 C220 120 344 180 474 128 C642 62 778 108 916 142 C1042 173 1126 126 1200 78" stroke="url(#line)" stroke-width="3" fill="none" filter="url(#softGlow)"/>
-  <path d="M92 236 C232 172 358 210 510 174 C690 132 812 176 960 194 C1070 207 1137 181 1200 150" stroke="#64748b" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M88 224 C210 168 305 154 430 126 C565 96 665 72 800 110 C948 152 1036 188 1200 76" stroke="url(#line)" stroke-width="3" fill="none" filter="url(#softGlow)"/>
+  <path d="M92 238 C250 188 372 205 528 174 C700 140 810 166 964 196 C1075 218 1138 182 1200 150" stroke="#64748b" stroke-width="1.5" fill="none" opacity="0.55"/>
+  <path d="M88 164 C278 116 440 150 620 152 C820 154 980 88 1200 112" stroke="#94a3b8" stroke-width="1.2" fill="none" opacity="0.35"/>
 
-  <circle cx="474" cy="128" r="6" fill="#22d3ee" filter="url(#softGlow)"/>
-  <circle cx="916" cy="142" r="6" fill="#60a5fa" filter="url(#softGlow)"/>
+  <circle cx="430" cy="126" r="6" fill="#22d3ee" filter="url(#softGlow)"/>
+  <circle cx="800" cy="110" r="6" fill="#60a5fa" filter="url(#softGlow)"/>
   <circle cx="1200" cy="78" r="6" fill="#f97316" filter="url(#softGlow)"/>
 
   <g font-family="Consolas, 'Courier New', monospace">
-    <text x="74" y="78" font-size="13" fill="#64748b">MCI STATE</text>
-    <text x="74" y="99" font-size="13" fill="#e2e8f0">x = [r, v]</text>
-    <text x="74" y="121" font-size="13" fill="#94a3b8">STM propagated</text>
+    <text x="74" y="82" font-size="13" fill="#64748b">STATE MODEL</text>
+    <text x="74" y="103" font-size="13" fill="#e2e8f0">Moon-centered frame</text>
+    <text x="74" y="125" font-size="13" fill="#94a3b8">third-body dynamics</text>
 
-    <text x="405" y="78" font-size="13" fill="#64748b">OBSERVATIONS</text>
-    <text x="405" y="99" font-size="13" fill="#e2e8f0">range | az | el</text>
-    <text x="405" y="121" font-size="13" fill="#94a3b8">visibility-gated</text>
+    <text x="354" y="82" font-size="13" fill="#64748b">TRACKING DATA</text>
+    <text x="354" y="103" font-size="13" fill="#e2e8f0">range | angles | Doppler</text>
+    <text x="354" y="125" font-size="13" fill="#94a3b8">visibility constrained</text>
 
-    <text x="735" y="78" font-size="13" fill="#64748b">ESTIMATORS</text>
-    <text x="735" y="99" font-size="13" fill="#e2e8f0">BLS-LM / SRIF</text>
-    <text x="735" y="121" font-size="13" fill="#94a3b8">SR-UKF sequential</text>
+    <text x="676" y="82" font-size="13" fill="#64748b">ESTIMATION</text>
+    <text x="676" y="103" font-size="13" fill="#e2e8f0">BLS-LM | SRIF | SR-UKF</text>
+    <text x="676" y="125" font-size="13" fill="#94a3b8">batch and sequential</text>
 
-    <text x="1010" y="78" font-size="13" fill="#64748b">DIAGNOSTICS</text>
-    <text x="1010" y="99" font-size="13" fill="#e2e8f0">NIS | condition</text>
-    <text x="1010" y="121" font-size="13" fill="#94a3b8">runtime | error</text>
+    <text x="1010" y="82" font-size="13" fill="#64748b">INTERPRETATION</text>
+    <text x="1010" y="103" font-size="13" fill="#e2e8f0">error | covariance | NIS</text>
+    <text x="1010" y="125" font-size="13" fill="#94a3b8">conditioning and runtime</text>
   </g>
 
   <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="74" y="184" font-size="46" font-weight="800" fill="#f8fafc">Cemil Eray Halici</text>
-    <text x="76" y="220" font-size="21" font-weight="600" fill="#67e8f9">Lunar orbit determination and estimator analysis</text>
+    <text x="74" y="188" font-size="44" font-weight="800" fill="#f8fafc">Cemil Eray Halici</text>
+    <text x="76" y="222" font-size="20" font-weight="600" fill="#67e8f9">Building reproducible tools for lunar orbit determination</text>
   </g>
 
   <g font-family="Consolas, 'Courier New', monospace" font-size="13" font-weight="700">

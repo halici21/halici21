@@ -2,19 +2,14 @@
   <img src="assets/od-console.svg" alt="Orbit determination console banner" width="100%" />
 </p>
 
-<h1 align="center">Cemil Eray Halici</h1>
-
 <p align="center">
-  <strong>Orbit determination, estimation algorithms, and research-grade scientific Python.</strong>
-</p>
-
-<p align="center">
-  <a href="https://github.com/halici21/lunar-orbit-determination">
-    <img src="https://img.shields.io/badge/main%20project-lunar%20orbit%20determination-2563eb?style=flat-square" />
-  </a>
-  <img src="https://img.shields.io/badge/domain-astrodynamics-0f766e?style=flat-square" />
-  <img src="https://img.shields.io/badge/methods-BLS--LM%20%7C%20SRIF%20%7C%20SR--UKF-7c3aed?style=flat-square" />
-  <img src="https://img.shields.io/badge/tools-Python%20%7C%20SPICE%20%7C%20PyQt5-f97316?style=flat-square" />
+  <a href="https://github.com/halici21/lunar-orbit-determination"><strong>lunar-orbit-determination</strong></a>
+  &nbsp;|&nbsp;
+  <strong>orbit determination</strong>
+  &nbsp;|&nbsp;
+  <strong>estimation algorithms</strong>
+  &nbsp;|&nbsp;
+  <strong>scientific Python</strong>
 </p>
 
 ---
